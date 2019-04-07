@@ -1,0 +1,549 @@
+html, body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("../img/pozadinaa.jpg");
+}
+
+
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+header .logo img {
+    width: 300px;
+    height: auto;
+}
+
+
+.navigacija {
+    width: 100%;
+    background-color: #151515;
+    box-shadow: 0px 10px 100px 40px #151515;
+}
+
+.navigacija ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    height: 50px;
+}
+
+.navigacija ul li {
+    flex-grow: 1;
+}
+.navigacija ul li a {
+    text-decoration: none !important;
+    color: #fff;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+/*    font-family: 'Cookie', cursive;*/
+}
+
+.navigacija ul li a:hover,
+.navigacija ul li a.active {
+    /*background: linear-gradient(0deg, red, #151515, #151515, #151515, #151515);*/
+    color: red;
+}
+
+.wbmsg {
+    color: #fff;
+}
+
+
+/*=============================== FOOTER*/
+
+
+footer {
+    background-color: #151515;
+    display: table-row;
+    height: 1px;
+}
+
+footer .wrapper {
+    padding: 50px 0;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+footer ul a:hover {
+    color: red;
+}
+
+footer .year {
+    text-align: center;
+    color: #fff;
+    cursor: default;
+    margin-top: 0;
+}
+
+
+/*=============================== FOOTER*/
+
+
+
+
+
+
+/*===================================== LOGIN and REGISTER */
+
+main.content {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+
+.login-form {
+    width: 500px;
+    margin: 30px auto 0;
+}
+
+.login-form .form-group {
+    position: relative;
+}
+
+.login-form .form-group .form-control {
+    padding-left: 27px;
+}
+
+.login-form .form-group i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.login-msg {
+    margin-top: 130px;
+}
+
+
+
+.login-msg h1,
+.login-msg h4 {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    color: #fff;
+}
+
+.login-msg h1 {
+    font-size: 50px;
+}
+
+.login-msg h4 {
+    font-size: 36px;
+}
+
+.login-form .form-group .form-control.nfl {
+    padding: 12px;
+}
+
+#tm + label {
+    vertical-align: middle;
+    color: #fff;
+}
+
+input.empty {
+    background: #FFBDB8;
+}
+
+span.err {
+    color: #fff;
+}
+
+
+/*===================================== LOGIN*/
+
+
+
+/*===================================== SHOP*/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.item {
+    background: rgba(255,255,255, .7);
+    height: 200px;
+    padding: 10px;
+    position: relative;
+    display: block;
+}
+
+.item h4 {
+    color: black;
+    margin: 0;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item img {
+    width: 100%;
+    height: calc(100% - 50px);
+    object-fit: contain;
+}
+
+.item span {
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: darkred;
+}
+
+.item {
+    text-decoration: none !important;
+}
+
+.korpa {
+    font-size: 20px;
+    color: #ddd !important;
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none !important;
+    background: rgba(21,96,160,0.33);
+    text-align: center;
+}
+
+
+
+/*===================================== SHOP*/
+
+
+
+/*===================================== CART*/
+
+.cart {
+
+}
+
+.cart * {
+    color: #ddd;
+}
+
+.cart-item {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart-info {
+    display: flex;
+}
+
+.cart-details {
+    position: relative;
+    margin-left: 20px;
+}
+
+.cart-details p {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.cart-info img {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 150px;
+    width: auto;
+    background-color: rgba(255,255,255,.2);
+}
+
+.cart-info h4 {
+    /* Brand name */
+}
+
+.cart-item-title {
+    margin-top: 5px;
+}
+
+.cart-price {
+
+}
+
+.cart-item-price {
+    font-size: 23px;
+}
+
+
+/*===================================== CART*/
+
+
+
+
+
+/*===================================== EACH ITEM */
+
+.itemLarge h1, h2 {
+    color: #ddd;
+}
+
+.imgAndDesc {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+.itemImg img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.itemDesc { position: relative }
+
+.itemDesc p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.actions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc {
+    font-size: 23px;
+    color: #ddd;
+}
+
+.itemLarge-price {
+    font-size: 23px;
+    color: #FF5548;
+}
+
+
+.notLogged {
+    color: #ddd;
+    font-size: 18px;
+}
+
+
+
+/*===================================== EACH ITEM */
+
+
+
+.order {
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgba(255,255,255,.7);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+
+
+
+
+/*===================================== SEARCH*/
+
+form#srch {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form#srch div {
+    margin: 10px;
+}
+
+form#srch input,
+form#srch select {
+    outline: none !important;
+    width: 200px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 5px;
+    color: #ddd;
+    height: 37px;
+    padding: 0 10px;
+}
+
+
+/*===================================== SEARCH*/
+
+
+/*===================================== CONTACT*/
+
+
+aside.details {
+    /*width: 50%;*/
+}
+
+.contact-form label {
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3.contact {
+    color: #ddd;
+    font-size: 50px;
+    font-family: 'Cookie', cursive;
+}
+
+.details .contactDetails {
+    list-style-type: none;
+    padding: 0;
+    color: #dddddd;
+    font-size: 18px;
+}
+
+
+/*===================================== CONTACT*/
+
+
+
+
+/*===================================== CONTACT*/
+
+.admin-panel h3,
+.admin-panel p,
+.admin-panel span {
+    color: #fff;
+}
+
+.admin-panel h3 {
+    font-size: 28px;
+}
+
+.admin-panel span {
+    font-size: 17px;
+}
+
+
+.message {
+    padding: 10px;
+    background: rgba(200,200,200,.3);
+    border-bottom: 1px solid #fff;
+}
+
+.message.read {
+    background: rgba(200,200,200,.5);
+}
+
+.admin-panel .isRead {
+    color: #4cae4c;
+}
+
+.admin-panel .isNotRead {
+    color: #FF796A;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*===================================== CONTACT*/
+
+
+
+/*================================== MEDIA QUERIES  */
+@media screen and ( max-width: 767px ) {
+    .navigacija {
+        display: none;
+    }
+
+
+    footer .pull-left,
+    footer .pull-right {
+        float: none !important;
+        justify-content: center;
+    }
+
+    footer .year {
+        margin-top: 30px;
+    }
+}
+
+@media screen and ( max-width: 580px ) {
+    .login-form {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and ( max-width: 1258px ) {
+
+    .shop {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+}
+
+@media screen and ( max-width: 853px ) {
+
+    .shop {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
